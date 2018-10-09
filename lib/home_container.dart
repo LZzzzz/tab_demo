@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:tab_demo/page/page_1.dart';
 import 'package:tab_demo/page/page_2.dart';
+import 'package:tab_demo/page/page_3.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -21,7 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
           BottomNavigationBarItem(
               icon: Icon(CupertinoIcons.book), title: Text('Book')),
           BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.photo_camera), title: Text('Photo')),
+              icon: Icon(CupertinoIcons.settings), title: Text('Setting')),
         ]),
         tabBuilder: (BuildContext context, int index) {
           return CupertinoTabView(
@@ -35,13 +36,13 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget switchPage(int index) {
     switch (index) {
       case 0:
-        return new Page1();
+        return Page1();
         break;
       case 1:
-        return new Page2();
+        return Page2();
         break;
       case 2:
-        return new Page1();
+        return Page3();
         break;
     }
   }

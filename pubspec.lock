@@ -130,6 +130,15 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.3.3"
+  ios_settings_icons:
+    dependency: "direct main"
+    description:
+      path: t96_ios_settings_assets
+      ref: HEAD
+      resolved-ref: "55e7394e042e9d47c22f84279f88f29952b6e3bf"
+      url: "https://github.com/xster/flutter-test.git"
+    source: git
+    version: "0.0.1"
   js:
     dependency: transitive
     description:
@@ -381,4 +390,4 @@ packages:
     source: hosted
     version: "2.1.15"
 sdks:
-  dart: ">=2.0.0-dev.68.0 <3.0.0"
+  dart: ">=2.0.0 <3.0.0"

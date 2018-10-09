@@ -20,6 +20,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
+  ios_settings_icons:
+      git:
+        url: https://github.com/xster/flutter-test.git
+        path: t96_ios_settings_assets
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

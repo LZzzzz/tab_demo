@@ -50,7 +50,7 @@ class Page1 extends StatelessWidget {
             ),
           ),
           padding: const EdgeInsets.all(8.0),
-          alignment: Alignment.center,
+          alignment: Alignment.topLeft,
           child: new Text(item,
               style: Theme.of(context)
                   .textTheme
