@@ -15,7 +15,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   var tabImages;
   int _tabIndex = 0;
-  var appBarTitles = ['home', 'find', 'setting'];
+  var appBarTitles = ['Home', 'Find', 'Setting'];
 
   @override
   Widget build(BuildContext context) {
