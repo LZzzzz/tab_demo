@@ -42,25 +42,19 @@ class _MyHomePageState extends State<MyHomePage> {
         tabBuilder: (BuildContext context, int index) {
           return CupertinoTabView(
             builder: (BuildContext context) {
-              return switchPage(index);
+              return IndexedStack(
+                index: _tabIndex,
+                children: <Widget>[
+                 Page1(),
+                 Page2(),
+                 Page3()
+                ],
+              );
             },
           );
         });
   }
 
-  Widget switchPage(int index) {
-    switch (index) {
-      case 0:
-        return Page1();
-        break;
-      case 1:
-        return Page2();
-        break;
-      case 2:
-        return Page3();
-        break;
-    }
-  }
 
   //根据选择获得对应的normal或是press的icon
   Image getTabIcon(int curIndex) {
